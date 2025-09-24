@@ -1,5 +1,28 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+  <style>
+  .whatsapp-btn {
+    position: fixed;        /* Fica fixo na tela */
+    bottom: 20px;           /* Distância da parte de baixo */
+    right: 20px;            /* Distância da lateral direita */
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;           /* Texto branco */
+    font-size: 16px;        /* Tamanho do texto */
+    font-weight: bold;
+    padding: 12px 20px;     /* Espaçamento interno */
+    border-radius: 30px;    /* Borda arredondada */
+    text-decoration: none;  /* Remove sublinhado */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1000;          /* Fica acima de outros elementos */
+    transition: transform 0.2s;
+  }
+
+  .whatsapp-btn:hover {
+    transform: scale(1.05); /* Efeito ao passar o mouse */
+  }
+</style>
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +34,17 @@
 <body class="bg-yellow-50 text-gray-800 font-sans">
   <!-- Header -->
   <header class="text-center py-6 bg-yellow-400 text-white rounded-b-2xl shadow-lg">
-    <h1 class="text-3xl font-bold">🍽️ Gira Brasil</h1>
+    <h1 class="text-3xl font-bold"> Gira Brasil</h1>
     <p class="text-sm">Restaurante Self-service por Quilo</p>
     <p class="text-sm">HÁ MAIS DE 20 ANOS DE TRADIÇÃO!</p>
-
   </header>
 
 
   <!-- Conteúdo principal -->
   <main class="p-4 space-y-6">
-  
+    <!-- botao wpp-->
+    <a href="https://wa.me/12981760077" target="_blank"  class="whatsapp-btn">Fale conosco</a>
+
     <!-- Wi-Fi -->
     <section class="bg-white rounded-2xl p-4 shadow-md">
       <h2 class="text-lg font-semibold text-green-700">📶 Wi-Fi Grátis</h2>
@@ -84,9 +108,8 @@
 
     <!-- Links rápidos -->
     <section class="bg-white rounded-2xl p-4 shadow-md">
-      <h2 class="text-lg font-semibold text-green-700">🔗 Conecte-se</h2>
+      <h2 class="text-lg font-semibold text-green-700">🔗Conecte-se</h2>
       <div class="flex flex-col gap-3 mt-2">
-        <a href="https://wa.me/12981760077" target="_blank" class="bg-green-600 text-white py-2 px-4 rounded-xl text-center shadow">WhatsApp</a>
         <a href="https://www.instagram.com/restaurantegirabrasil" target="_blank" class="bg-pink-600 text-white py-2 px-4 rounded-xl text-center shadow">Instagram</a>
         <a href="https://www.facebook.com/restaurantegirabrasil" target="_blank" class="bg-blue-600 text-white py-2 px-4 rounded-xl text-center shadow">Facebook</a>
         <a href="https://share.google/Vc6PpONfmqszXh0tQ" target="_blank" class="bg-gray-700 text-white py-2 px-4 rounded-xl text-center shadow">Google Maps</a>
@@ -97,10 +120,10 @@
 
   <!-- Rodapé -->
   <footer class="text-center text-sm text-gray-500 py-4">
-    © 2025 Gira Brasil Restaurante
+    ©2025 Gira Brasil Restaurante
   </footer>
 
-  <!-- Script Swiper -->
+  <!-- carrossel -->
   <script>
     const swiper = new Swiper('.swiper', {
       loop: true,
@@ -112,3 +135,4 @@
   </script>
 </body>
 </html>
+
