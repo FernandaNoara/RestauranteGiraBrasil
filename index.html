@@ -1,55 +1,20 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
-  <style>
-  .whatsapp-btn {
-    position: fixed;        /* Fica fixo na tela */
-    bottom: 20px;           /* Distância da parte de baixo */
-    right: 20px;            /* Distância da lateral direita */
-    background-color: #25D366; /* Cor do WhatsApp */
-    color: white;           /* Texto branco */
-    font-size: 16px;        /* Tamanho do texto */
-    font-weight: bold;
-    padding: 12px 20px;     /* Espaçamento interno */
-    border-radius: 30px;    /* Borda arredondada */
-    text-decoration: none;  /* Remove sublinhado */
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Sombra */
-    z-index: 1000;          /* Fica acima de outros elementos */
-    transition: transform 0.2s;
-  }
-
-  .delivery-btn {
-    position: fixed;        /* Fica fixo na tela */
-    bottom: 20px;           /* Distância da parte de baixo */
-    left: 20px;            /* Distância da lateral esquerda */
-    background-color: red; /* Cor do WhatsApp */
-    color: white;           /* Texto branco */
-    font-size: 16px;        /* Tamanho do texto */
-    font-weight: bold;
-    padding: 12px 20px;     /* Espaçamento interno */
-    border-radius: 30px;    /* Borda arredondada */
-    text-decoration: none;  /* Remove sublinhado */
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Sombra */
-    z-index: 1000;          /* Fica acima de outros elementos */
-    transition: transform 0.2s;
-  }
-
-  .tela-btn:hover {
-    transform: scale(1.05); /* Efeito ao passar o mouse */
-  }
-</style>
-  
+<html lang="pt-BR">  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gira Brasil Restaurante</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet " href="index.css">  
 </head>
 <body class="bg-yellow-50 text-gray-800 font-sans">
   <!-- Header -->
   <header class="text-center py-6 bg-yellow-400 text-white rounded-b-2xl shadow-lg">
+    <h1 src="fotos/XWBH1568.JPG" class="fotogira"> </h1>
     <h1 class="text-3xl font-bold"> Gira Brasil</h1>
     <p class="text-sm">Restaurante Self-service por Quilo</p>
     <p class="text-sm">HÁ MAIS DE 20 ANOS DE TRADIÇÃO!</p>
@@ -64,12 +29,37 @@
     <a href="https://pedido.anota.ai/loja/gira-brasil?from=site&utm_source=portal-share-btn&referer=https://www.google.com/" target="_blank" class="delivery-btn" > 🍴 Delivery </a>
 
 
+    
     <!-- Wi-Fi -->
     <section class="bg-white rounded-2xl p-4 shadow-md">
       <h2 class="text-lg font-semibold text-green-700">📶 Wi-Fi Grátis</h2>
       <p><strong>Rede:</strong> CLIENTE GIRA BRASIL</p>
       <p><strong>Senha:</strong> GIRABRASIL1500</p>
     </section>
+
+         <!-- Carrossel -->
+  <div class="swiper my-6 w-full max-w-md mx-auto rounded-2xl shadow-lg">
+    <div class="swiper-wrapper">
+      <!-- Troque as imagens pelos pratos do restaurante -->
+      <div class="swiper-slide">
+        <img src="fotos/WhatsApp Image 2025-09-24 at 19.11.34 (1).jpeg" class="w-full rounded-2xl"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="fotos/MDAD1599.JPG" class="w-full rounded-2xl"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="fotos/RTXHE4790.JPG" class="w-full rounded-2xl"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="fotos/WhatsApp Image 2025-09-24 at 19.12.49 (2).jpeg" class="w-full rounded-2xl"/>
+      </div>
+     
+    </div>
+
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>  
 
     <section class="bg-white rounded-2xl p-4 shadow-md">
       <h2 class="text-lg font-semibold text-green-700">Sua opnião é muito importante!</h2>
@@ -95,26 +85,7 @@
       <p>Av. Brasil, 929 - Monte Castelo, São José dos Campos</p>
     </section>
 
-     <!-- Carrossel -->
-  <div class="swiper my-6 w-full max-w-md mx-auto rounded-2xl shadow-lg">
-    <div class="swiper-wrapper">
-      <!-- Troque as imagens pelos pratos do restaurante -->
-      <div class="swiper-slide">
-        <img src="fotos/IMG_0055.JPG" class="w-full rounded-2xl"/>
-      </div>
-      <div class="swiper-slide">
-        <img src="fotos/MDAD1599.JPG" class="w-full rounded-2xl"/>
-      </div>
-      <div class="swiper-slide">
-        <img src="fotos/RTXHE4790.JPG" class="w-full rounded-2xl"/>
-      </div>
-     
-    </div>
 
-
-    <!-- Paginação -->
-    <div class="swiper-pagination"></div>
-  </div>  
 
     <!-- Links rápidos -->
     <section class="bg-white rounded-2xl p-4 shadow-md">
@@ -145,5 +116,4 @@
   </script>
 </body>
 </html>
-
 
