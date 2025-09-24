@@ -1,0 +1,35 @@
+  .whatsapp-btn {
+    position: fixed;        /* Fica fixo na tela */
+    bottom: 20px;           /* Distância da parte de baixo */
+    right: 20px;            /* Distância da lateral direita */
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;           /* Texto branco */
+    font-size: 16px;        /* Tamanho do texto */
+    font-weight: bold;
+    padding: 12px 20px;     /* Espaçamento interno */
+    border-radius: 30px;    /* Borda arredondada */
+    text-decoration: none;  /* Remove sublinhado */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1000;          /* Fica acima de outros elementos */
+    transition: transform 0.2s;
+  }
+
+  .delivery-btn {
+    position: fixed;        /* Fica fixo na tela */
+    bottom: 20px;           /* Distância da parte de baixo */
+    left: 20px;            /* Distância da lateral esquerda */
+    background-color: rgb(0, 162, 255); /* Cor do WhatsApp */
+    color: white;           /* Texto branco */
+    font-size: 16px;        /* Tamanho do texto */
+    font-weight: bold;
+    padding: 12px 20px;     /* Espaçamento interno */
+    border-radius: 30px;    /* Borda arredondada */
+    text-decoration: none;  /* Remove sublinhado */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1000;          /* Fica acima de outros elementos */
+    transition: transform 0.2s;
+  }
+
+  .tela-btn:hover {
+    transform: scale(1.05); /* Efeito ao passar o mouse */
+  }
