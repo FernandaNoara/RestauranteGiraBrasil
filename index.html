@@ -18,7 +18,23 @@
     transition: transform 0.2s;
   }
 
-  .whatsapp-btn:hover {
+  .delivery-btn {
+    position: fixed;        /* Fica fixo na tela */
+    bottom: 20px;           /* Distância da parte de baixo */
+    left: 20px;            /* Distância da lateral esquerda */
+    background-color: red; /* Cor do WhatsApp */
+    color: white;           /* Texto branco */
+    font-size: 16px;        /* Tamanho do texto */
+    font-weight: bold;
+    padding: 12px 20px;     /* Espaçamento interno */
+    border-radius: 30px;    /* Borda arredondada */
+    text-decoration: none;  /* Remove sublinhado */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1000;          /* Fica acima de outros elementos */
+    transition: transform 0.2s;
+  }
+
+  .tela-btn:hover {
     transform: scale(1.05); /* Efeito ao passar o mouse */
   }
 </style>
@@ -42,8 +58,11 @@
 
   <!-- Conteúdo principal -->
   <main class="p-4 space-y-6">
-    <!-- botao wpp-->
-    <a href="https://wa.me/12981760077" target="_blank"  class="whatsapp-btn">Fale conosco</a>
+
+    <!-- botao wpp e delivery-->
+    <a href="https://wa.me/12981760077" target="_blank"  class="whatsapp-btn">Fale conosco</a>  
+    <a href="https://pedido.anota.ai/loja/gira-brasil?from=site&utm_source=portal-share-btn&referer=https://www.google.com/" target="_blank" class="delivery-btn" > 🍴 Delivery </a>
+
 
     <!-- Wi-Fi -->
     <section class="bg-white rounded-2xl p-4 shadow-md">
@@ -68,15 +87,6 @@
       <p>Almoço TODOS OS DIAS, incluindo feriados!</p>
       <P>Segunda a Sexta -  Das 11h às 14h </P>
       <P>Sabado, Domingo e Feriados -  Das 11h às 15h</P>
-    </section>
-
-    <!-- Cardápio -->
-    <section class="bg-white rounded-2xl p-4 shadow-md text-center">
-      <h2 class="text-lg font-semibold text-green-700">🍴 Nosso Cardápio</h2>
-      <a href="https://pedido.anota.ai/loja/gira-brasil?from=site&utm_source=portal-share-btn&referer=https://www.google.com/" target="_blank" 
-         class="mt-3 inline-block bg-yellow-500 text-white py-2 px-6 rounded-xl font-semibold shadow hover:bg-yellow-600">
-         Ver Cardápio
-      </a>
     </section>
 
       <!-- Endereço -->
@@ -135,4 +145,5 @@
   </script>
 </body>
 </html>
+
 
